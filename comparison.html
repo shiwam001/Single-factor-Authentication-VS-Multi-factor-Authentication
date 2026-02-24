@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SFA vs MFA</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="login-box">
+    <h2>SFA vs MFA</h2>
+
+    <table border="1" width="100%" cellpadding="8">
+        <tr>
+            <th>Feature</th>
+            <th>SFA</th>
+            <th>MFA</th>
+        </tr>
+        <tr>
+            <td>Auth Method</td>
+            <td>Password</td>
+            <td>Password + OTP</td>
+        </tr>
+        <tr>
+            <td>Security</td>
+            <td>Low</td>
+            <td>High</td>
+        </tr>
+        <tr>
+            <td>Usage</td>
+            <td>Basic apps</td>
+            <td>Banking, Gmail</td>
+        </tr>
+    </table>
+
+    <a href="/dashboard">Back</a>
+</div>
+
+</body>
+</html>

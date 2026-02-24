@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SFA vs MFA Comparison</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #667eea;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-box" style="width:600px;">
+    <h2>SFA vs MFA Comparison</h2>
+
+    <table>
+        <tr>
+            <th>Feature</th>
+            <th>SFA (Single-Factor)</th>
+            <th>MFA (Multi-Factor)</th>
+        </tr>
+        <tr>
+            <td>Authentication Method</td>
+            <td>Password only</td>
+            <td>Password + OTP</td>
+        </tr>
+        <tr>
+            <td>Security Level</td>
+            <td>Low</td>
+            <td>High</td>
+        </tr>
+        <tr>
+            <td>Protection if Password Leaks</td>
+            <td>No</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>Used In</td>
+            <td>Basic websites</td>
+            <td>Banking, Gmail, UPI</td>
+        </tr>
+    </table>
+
+    <br>
+    <a href="/dashboard">⬅ Back to Dashboard</a>
+</div>
+
+</body>
+</html>

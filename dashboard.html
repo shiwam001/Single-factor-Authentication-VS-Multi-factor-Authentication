@@ -1,0 +1,6 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<div class="card">
+    <h2>Welcome {{ user.username }}</h2>
+    <p><b>Last Login:</b><br>{{ user.last_login }}</p>
+    <a href="/logout">Logout</a>
+</div>
